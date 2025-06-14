@@ -1,0 +1,54 @@
+/* General styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 95%;
+}
+
+/* Animated section */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Helvetica, sans-serif;
+}
+
+section h3 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: transparent;
+  animation-name: lord;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lord {
+  0% {
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+  }
+  25% {
+    background: linear-gradient(to right, blue, red);
+    background-clip: text;
+  }
+  50% {
+    background: linear-gradient(to right, blue, green, purple, red);
+    background-clip: text;
+  }
+  75% {
+    background: linear-gradient(to left, yellow, red, blue, purple);
+    background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to right, yellow, red, blue, purple);
+    background-clip: text;
+  }
+}
